@@ -8,19 +8,6 @@
 #
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
-module.exports = (robot) ->
-
-  robot.hear /(sushi|すし|スシ|寿司)/i, (msg) ->
-    array = ["aaaa", "bbb", "ccc", "ddd", "eee", "fff", "ggg", "hhh"]
-    i = array.length
-    if i is 0 then return false
-    while --i
-      j = Math.floor Math.random() * (i + 1)
-      tmpi = array[i]
-      tmpj = array[j]
-      array[i] = tmpj
-      array[j] = tmpi
-    msg.send array
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
