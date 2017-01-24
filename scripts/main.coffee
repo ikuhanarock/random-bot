@@ -13,5 +13,6 @@ module.exports = (robot) ->
       array[j] = tmpi
     res.send array.join(" ")
 
+
   robot.hear /(sushi|すし|スシ|寿司)/i, (msg) ->
     msg.send "スシが食べたい。"
