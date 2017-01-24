@@ -11,7 +11,7 @@ module.exports = (robot) ->
       tmpj = array[j]
       array[i] = tmpj
       array[j] = tmpi
-    res.send array
+    res.send array.join(" ")
 
   robot.hear /(sushi|すし|スシ|寿司)/i, (msg) ->
     msg.send "スシが食べたい。"
