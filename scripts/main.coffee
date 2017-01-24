@@ -11,7 +11,7 @@ module.exports = (robot) ->
       tmpj = array[j]
       array[i] = tmpj
       array[j] = tmpi
-    res.send array.join(" ")
+    res.send "コンカイ ノ ジュンバン ハ、\n" + array.join("\n")
 
   robot.hear /^random-bot\s.+?\s.+?$/i, (res) ->
     data = res.match[0].replace("random-bot ", "")
@@ -24,4 +24,4 @@ module.exports = (robot) ->
       tmpj = array[j]
       array[i] = tmpj
       array[j] = tmpi
-    res.send array.join(" ")
+    res.send "コンカイ ノ ジュンバン ハ、\n" + array.join("\n")
